@@ -1,0 +1,23 @@
+<div class="container">
+    <button class="btn btn-primary position" (click)="convertToExcel()">Convert to EXCEL</button>
+    <table class="table">
+      <thead>
+        <tr>
+          <th scope="col">#</th>
+          <th scope="col">Full Name</th>
+          <th scope="col">Age</th>
+          <th scope="col">e-Mail</th>
+        </tr>
+      </thead>
+      <tbody *ngFor="let elem of myArray">
+        <tr>
+          <th scope="row">{{elem.listNumber}}</th>
+          <td>{{elem.user}}</td>
+          <td>{{elem.age}}</td>
+          <td>{{elem.eMail}}</td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+  <router-outlet></router-outlet>
+  

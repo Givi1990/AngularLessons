@@ -1,0 +1,15 @@
+<p>pricing works!</p>
+
+<div class="container flex">
+    <div class="card personalize" *ngFor="let elem of appArray">
+        <div class="card-header">
+            <a class="btn btn-primary" (click)="navigateToApp(elem)">{{elem.appName}}</a>
+        </div>
+    </div>
+</div>
+<div class="container" style="width: 84%; margin-left: -13px; margin-top: 10px;">
+    <router-outlet></router-outlet>
+</div>
+
+
+
